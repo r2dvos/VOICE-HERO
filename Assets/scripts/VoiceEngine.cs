@@ -39,6 +39,7 @@ public class VoiceEngine : MonoBehaviour
         }
         else if (UnitySphinx.GetSearchModel() == "jsgf")
         {
+            print("listing for colours");
             if (str!="")
             {
                 if (str == "yellow")
