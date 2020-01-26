@@ -62,7 +62,7 @@ public class UnitySphinx : MonoBehaviour {
 		hmm = Application.dataPath + "/Resources/UnitySphinx/model/en-us/en-us";
 		lm = Application.dataPath + "/Resources/UnitySphinx/model/en-us/en-us.lm.bin";
 		dict = Application.dataPath + "/Resources/UnitySphinx/model/en-us/cmudict-en-us.dict";
-		jsgf = Application.dataPath + "/Resources/UnitySphinx/model/en-us/animals.gram";
+		jsgf = Application.dataPath + "/Resources/UnitySphinx/model/en-us/colours.gram";
 		kws = Application.dataPath + "/Resources/UnitySphinx/model/en-us/keyphrase.list";
 		Init (audioDevice, searchModel, hmm, lm, dict, jsgf, kws);
 	}
