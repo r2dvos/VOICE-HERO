@@ -21,6 +21,8 @@ public class VoiceEngine : MonoBehaviour
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += Recognized;
         keywordRecognizer.Start();*/
+        if (UnitySphinx.IsInitialized())
+            UnitySphinx.Stop();
         UnitySphinx.Init();
         UnitySphinx.Run();
     }
@@ -42,6 +44,7 @@ public class VoiceEngine : MonoBehaviour
             print("listing for colours");
             if (str!="")
             {
+                print(str);
                 if (str == "yellow")
                     Yellow();
                 else if (str == "red")
@@ -69,7 +72,6 @@ public class VoiceEngine : MonoBehaviour
                     Red();
                     Blue();
                 }
-                print(str);
             }
         }
     }
